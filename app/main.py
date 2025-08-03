@@ -32,10 +32,9 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS setup
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, restrict to your frontend domain
+    allow_origins=["https://hybrid-assurio.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
