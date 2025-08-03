@@ -150,7 +150,7 @@
     </div>
 
     <script>
-        const API_BASE = "https://hybrid-assurio.onrender.com/api/v1";
+        const API_BASE = "http://localhost:8000/api/v1";
         let uploadedFiles = [];
 
         // Function to refresh document count
@@ -366,7 +366,7 @@
     console.log("🌐 Frontend loaded, warming up backend...");
 
     try {
-        const response = await fetch('https://hybrid-assurio.onrender.com/api/v1');
+        const response = await fetch('http://localhost:8000/api/v1');
         const data = await response.json();
         console.log("🔥 Backend warmup successful:", data);
     } catch (err) {
